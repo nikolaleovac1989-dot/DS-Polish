@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="sr-Latn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--
+    ===================================================================
+    PLACEHOLDERI ZA ZAMENU (pretražite fajl po oznaci u uglastim zagradama):
+      [DOMEN]            -> https://www.vas-domen.rs/  (ovde, robots.txt, sitemap.xml)
+      [ADRESA]           -> ulica i broj, grad
+      [GOOGLE MAPS LINK] -> link ka tačnoj lokaciji na Google Maps
+      [GOOGLE MAPS EMBED]-> "embed" link mape (Google Maps > Podeli > Ugradi mapu)
+      [RADNO VREME]      -> stvarno radno vreme
+      [FOTOGRAFIJE]      -> sopstvene fotografije studija (folder /images)
+    Telefon i Instagram su već uneti: 065 314 4591, @_ds_polish
+    ===================================================================
+  -->
+
+  <title>DS Polish | Poliranje farova, poliranje laka i keramička zaštita</title>
+  <meta name="description" content="DS Polish – detailing studio za poliranje farova, poliranje i detailing eksterijera i keramičku zaštitu laka. Profesionalna oprema, kvalitetna hemija. Zakažite termin: 065 314 4591.">
+  <!-- [DOMEN] -->
+  <link rel="canonical" href="https://www.vas-domen.rs/">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0a0a0b">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="sr_RS">
+  <meta property="og:site_name" content="DS Polish">
+  <meta property="og:title" content="DS Polish | Detailing studio">
+  <meta property="og:description" content="Poliranje farova, poliranje i detailing eksterijera i keramička zaštita laka. Zakažite termin: 065 314 4591.">
+  <meta property="og:url" content="https://www.vas-domen.rs/"><!-- [DOMEN] -->
+  <!-- [FOTOGRAFIJE] zamenite sopstvenom slikom 1200x630 (npr. https://www.vas-domen.rs/images/og.jpg) -->
+  <meta property="og:image" content="https://images.unsplash.com/photo-1567808291548-fc3ee04dbcf0?auto=format&fit=crop&w=1200&h=630&q=75">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <!-- Fontovi -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap">
+
+  <!-- Hero slika – preload za brži prikaz -->
+  <link rel="preload" as="image" fetchpriority="high"
+        imagesrcset="https://images.unsplash.com/photo-1567808291548-fc3ee04dbcf0?auto=format&fit=crop&w=800&q=70 800w, https://images.unsplash.com/photo-1567808291548-fc3ee04dbcf0?auto=format&fit=crop&w=1200&q=70 1200w, https://images.unsplash.com/photo-1567808291548-fc3ee04dbcf0?auto=format&fit=crop&w=1600&q=70 1600w"
+        imagesizes="(min-width: 1024px) 58vw, 100vw">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutomotiveBusiness",
+    "@id": "https://www.vas-domen.rs/#studio",
+    "name": "DS Polish",
+    "description": "Detailing studio za poliranje farova, poliranje i detailing eksterijera i keramičku zaštitu laka.",
+    "url": "https://www.vas-domen.rs/",
+    "telephone": "+381653144591",
+    "image": "https://images.unsplash.com/photo-1567808291548-fc3ee04dbcf0?auto=format&fit=crop&w=1200&h=630&q=75",
+    "logo": "https://www.vas-domen.rs/favicon.svg",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "[ADRESA]",
+      "addressLocality": "[GRAD]",
+      "addressCountry": "RS"
+    },
+    "hasMap": "https://maps.google.com/?q=DS+Polish+detailing",
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "15:00" }
+    ],
+    "sameAs": ["https://www.instagram.com/_ds_polish/"],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Usluge",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Poliranje farova" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Poliranje i detailing eksterijera" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Keramička zaštita" } }
+      ]
+    }
+  }
+  </script>
+
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+  <a class="skip-link" href="#usluge">Preskoči na sadržaj</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a class="logo" href="#top" aria-label="DS Polish – početak stranice">
+        <span class="logo__mark">DS</span>
+        <span class="logo__text">Polish<small>Detailing studio</small></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Glavna navigacija">
+        <ul class="nav__list">
+          <li><a href="#usluge">Usluge</a></li>
+          <li><a href="#zasto">Zašto mi</a></li>
+          <li><a href="#rezultat">Pre / posle</a></li>
+          <li><a href="#o-nama">O nama</a></li>
+          <li><a href="#instagram">Instagram</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+        <div class="nav__mobile-cta">
+          <a class="btn btn--primary btn--block" href="tel:+381653144591">Pozovi 065 314 4591</a>
+          <a class="btn btn--ghost btn--block" href="https://www.instagram.com/_ds_polish/" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </nav>
+
+      <div class="header__actions">
+        <a class="btn btn--outline btn--sm header__cta" href="#kontakt">Zakažite termin</a>
+        <a class="header__call" href="tel:+381653144591" aria-label="Pozovi 065 314 4591">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></svg>
+        </a>
+        <button class="burger" id="burger" type="button" aria-label="Otvori meni" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ 1. HERO ============ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__media">
+        <!-- [FOTOGRAFIJE] hero fotografija – zamenite sopstvenom (preporuka: vertikalna, min. 1600px širine) -->
+        <img src="https://images.unsplash.com/photo-1567808291548-fc3ee04dbcf0?auto=format&fit=crop&w=1200&q=70"
+             srcset="https://images.unsplash.com/photo-1567808291548-fc3ee04dbcf0?auto=format&fit=crop&w=800&q=70 800w,
+                     https://images.unsplash.com/photo-1567808291548-fc3ee04dbcf0?auto=format&fit=crop&w=1200&q=70 1200w,
+                     https://images.unsplash.com/photo-1567808291548-fc3ee04dbcf0?auto=format&fit=crop&w=1600&q=70 1600w"
+             sizes="(min-width: 1024px) 58vw, 100vw"
+             alt="Crni automobil u zatamnjenom detailing studiju pod linijskim LED svetlima"
+             width="1600" height="2400" fetchpriority="high" decoding="async">
+      </div>
+
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="eyebrow">Detailing studio</p>
+          <h1 class="hero__title" id="hero-title">Detalj je<br>standard<span class="dot">.</span></h1>
+          <p class="hero__lead">Poliranje farova, poliranje i detailing eksterijera i keramička zaštita laka. Profesionalna oprema, proverena hemija i pažljiv rad na svakom vozilu.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#kontakt">Zakažite termin
+              <svg class="btn__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn--ghost" href="#usluge">Pogledajte usluge</a>
+          </div>
+        </div>
+
+        <div class="hero__hud" aria-hidden="true">
+          <div class="hud-item"><span class="hud-item__num">01</span><span class="hud-item__label">Farovi</span></div>
+          <div class="hud-item"><span class="hud-item__num">02</span><span class="hud-item__label">Eksterijer</span></div>
+          <div class="hud-item"><span class="hud-item__num">03</span><span class="hud-item__label">Keramika</span></div>
+        </div>
+
+        <a class="hero__call" href="tel:+381653144591">
+          <span class="hero__call-label">Zakazivanje</span>
+          <span class="hero__call-number">065 314 4591</span>
+          <span class="hero__call-link">Pozovite <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+      </div>
+
+      <a class="hero__scroll" href="#usluge" aria-label="Skroluj do usluga"><span></span></a>
+    </section>
+
+    <!-- ============ 2. USLUGE ============ -->
+    <section class="section services" id="usluge" aria-labelledby="usluge-title">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow"><span>01</span> Usluge</p>
+          <h2 class="section-title" id="usluge-title">Tri usluge.<br>Jedan standard rada.</h2>
+        </header>
+
+        <div class="services__grid">
+          <article class="service-card" data-reveal>
+            <div class="service-card__media">
+              <!-- [FOTOGRAFIJE] -->
+              <img src="https://images.unsplash.com/photo-1658244500543-47f32dc51dc2?auto=format&fit=crop&w=720&h=540&q=70"
+                   srcset="https://images.unsplash.com/photo-1658244500543-47f32dc51dc2?auto=format&fit=crop&w=480&h=360&q=70 480w,
+                           https://images.unsplash.com/photo-1658244500543-47f32dc51dc2?auto=format&fit=crop&w=720&h=540&q=70 720w,
+                           https://images.unsplash.com/photo-1658244500543-47f32dc51dc2?auto=format&fit=crop&w=960&h=720&q=70 960w"
+                   sizes="(min-width: 1024px) 33vw, (min-width: 700px) 50vw, 100vw"
+                   alt="Mašinsko poliranje površine pored LED fara na crnom automobilu"
+                   width="720" height="540" loading="lazy" decoding="async">
+              <span class="service-card__num">01</span>
+            </div>
+            <div class="service-card__body">
+              <h3 class="service-card__title">Poliranje farova</h3>
+              <p>Zamagljeni, požuteli i izgrebani farovi vraćaju se u čisto i jasno stanje. Oštećeni sloj uklanjamo postepenim brušenjem i poliranjem, a površinu zatim štitimo kako bi rezultat duže trajao.</p>
+              <ul class="ticks">
+                <li>Uklanjanje zamućenja i žute boje</li>
+                <li>Bolja propusnost svetla</li>
+                <li>Završna zaštita površine</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="service-card" data-reveal>
+            <div class="service-card__media">
+              <!-- [FOTOGRAFIJE] -->
+              <img src="https://images.unsplash.com/photo-1620584898989-d39f7f9ed1b7?auto=format&fit=crop&w=720&h=540&q=70"
+                   srcset="https://images.unsplash.com/photo-1620584898989-d39f7f9ed1b7?auto=format&fit=crop&w=480&h=360&q=70 480w,
+                           https://images.unsplash.com/photo-1620584898989-d39f7f9ed1b7?auto=format&fit=crop&w=720&h=540&q=70 720w,
+                           https://images.unsplash.com/photo-1620584898989-d39f7f9ed1b7?auto=format&fit=crop&w=960&h=720&q=70 960w"
+                   sizes="(min-width: 1024px) 33vw, (min-width: 700px) 50vw, 100vw"
+                   alt="Rotaciona polirka na laku crnog automobila tokom korekcije laka"
+                   width="720" height="540" loading="lazy" decoding="async">
+              <span class="service-card__num">02</span>
+            </div>
+            <div class="service-card__body">
+              <h3 class="service-card__title">Poliranje i detailing eksterijera</h3>
+              <p>Temeljno pranje i dekontaminacija, zatim mašinsko poliranje koje uklanja sitne ogrebotine, holograme i tragove pranja. Lak dobija dubinu i sjaj, uz pažljivo i kontrolisano skidanje materijala.</p>
+              <ul class="ticks">
+                <li>Pranje i dekontaminacija laka</li>
+                <li>Korekcija sitnih nepravilnosti</li>
+                <li>Vraćanje dubine i sjaja</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="service-card" data-reveal>
+            <div class="service-card__media">
+              <!-- [FOTOGRAFIJE] -->
+              <img src="https://images.unsplash.com/photo-1550565076-b2371ea1a324?auto=format&fit=crop&w=720&h=540&q=70"
+                   srcset="https://images.unsplash.com/photo-1550565076-b2371ea1a324?auto=format&fit=crop&w=480&h=360&q=70 480w,
+                           https://images.unsplash.com/photo-1550565076-b2371ea1a324?auto=format&fit=crop&w=720&h=540&q=70 720w,
+                           https://images.unsplash.com/photo-1550565076-b2371ea1a324?auto=format&fit=crop&w=960&h=720&q=70 960w"
+                   sizes="(min-width: 1024px) 33vw, (min-width: 700px) 50vw, 100vw"
+                   alt="Kapi vode na zaštićenom laku tamnog automobila – hidrofobni efekat keramike"
+                   width="720" height="540" loading="lazy" decoding="async">
+              <span class="service-card__num">03</span>
+            </div>
+            <div class="service-card__body">
+              <h3 class="service-card__title">Keramička zaštita</h3>
+              <p>Posle pranja, dekontaminacije i korekcije laka nanosimo keramički premaz koji štiti od vode, prljavštine i UV zračenja. Sjaj je izraženiji, a vozilo se znatno lakše održava.</p>
+              <ul class="ticks">
+                <li>Profesionalna priprema površine</li>
+                <li>Hidrofobni efekat</li>
+                <li>Zaštita od UV zračenja i nečistoća</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 3. ZAŠTO ODABRATI NAS ============ -->
+    <section class="section why" id="zasto" aria-labelledby="zasto-title">
+      <div class="container">
+        <header class="section-head section-head--split" data-reveal>
+          <div>
+            <p class="eyebrow"><span>02</span> Zašto odabrati nas</p>
+            <h2 class="section-title" id="zasto-title">Rad koji se vidi<br>i posle pranja.</h2>
+          </div>
+          <p class="section-head__text">Isti postupak, ista pažnja i ista oprema – bez obzira na to da li je u pitanju gradski automobil ili sportski kupe.</p>
+        </header>
+
+        <ol class="why__grid">
+          <li class="why-item" data-reveal>
+            <figure class="why-item__media">
+              <img src="images/zasto-1.jpg" alt="Orbitalna polirka na crnom laku automobila" width="720" height="960" loading="lazy" decoding="async">
+            </figure>
+            <span class="why-item__num">01</span>
+            <h3 class="why-item__title">Profesionalna oprema</h3>
+            <p>Mašine, padovi i rasveta za precizan i ujednačen rad.</p>
+          </li>
+          <li class="why-item" data-reveal>
+            <figure class="why-item__media">
+              <img src="images/zasto-2.jpg" alt="Nanošenje abrazivne paste na pad za poliranje" width="720" height="960" loading="lazy" decoding="async">
+            </figure>
+            <span class="why-item__num">02</span>
+            <h3 class="why-item__title">Kvalitetna hemija</h3>
+            <p>Proverena profesionalna sredstva, birana prema laku i stanju vozila.</p>
+          </li>
+          <li class="why-item" data-reveal>
+            <figure class="why-item__media">
+              <img src="images/zasto-3.jpg" alt="Nanošenje keramičke zaštite aplikatorom na haubu" width="720" height="960" loading="lazy" decoding="async">
+            </figure>
+            <span class="why-item__num">03</span>
+            <h3 class="why-item__title">Posvećenost detaljima</h3>
+            <p>Ivice, spojevi i teško dostupna mesta dobijaju istu pažnju kao hauba.</p>
+          </li>
+          <li class="why-item" data-reveal>
+            <figure class="why-item__media">
+              <img src="images/zasto-4.jpg" alt="Brisanje laka mikrofiber krpom posle pranja" width="720" height="960" loading="lazy" decoding="async">
+            </figure>
+            <span class="why-item__num">04</span>
+            <h3 class="why-item__title">Individualan pristup</h3>
+            <p>Pre rada pregledamo vozilo i dogovaramo postupak koji mu odgovara.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ 4. PRE / POSLE – POLIRANJE FAROVA ============ -->
+    <section class="section ba" id="rezultat" aria-labelledby="rezultat-title">
+      <div class="container ba__inner">
+        <div class="ba__text" data-reveal>
+          <p class="eyebrow"><span>03</span> Rezultat</p>
+          <h2 class="section-title" id="rezultat-title">Poliranje farova<br>pre i posle.</h2>
+          <p>Pomerite klizač i uporedite. Zamućen i požuteo far vraća se u providno stanje – automobil izgleda urednije, a svetlo bolje osvetljava put.</p>
+        </div>
+
+        <div class="ba__more" data-reveal>
+          <ol class="steps">
+            <li><span>01</span>Brušenje oštećenog sloja</li>
+            <li><span>02</span>Poliranje do pune providnosti</li>
+            <li><span>03</span>Zaštita od UV zračenja</li>
+          </ol>
+          <a class="btn btn--primary" href="#kontakt">Zakažite poliranje farova
+            <svg class="btn__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+
+        <!-- PRE / POSLE: images/far-pre.jpg i images/far-posle.jpg (zameniti istim imenima za novi primer) -->
+        <div class="ba__compare" data-reveal style="--pos: 50%">
+          <div class="ba__after">
+            <img src="images/far-posle.jpg"
+                 alt="Far automobila posle poliranja – providan i čist"
+                 width="1024" height="1024" loading="lazy" decoding="async">
+          </div>
+          <div class="ba__before">
+            <img src="images/far-pre.jpg"
+                 alt="Isti far pre poliranja – zamućen i požuteo"
+                 width="1024" height="1024" loading="lazy" decoding="async">
+          </div>
+          <span class="ba__tag ba__tag--before">Pre</span>
+          <span class="ba__tag ba__tag--after">Posle</span>
+          <span class="ba__handle" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6"/></svg>
+          </span>
+          <label class="visually-hidden" for="ba-range">Uporedite far pre i posle poliranja</label>
+          <input class="ba__range" id="ba-range" type="range" min="0" max="100" value="50">
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 5. O NAMA ============ -->
+    <section class="section about" id="o-nama" aria-labelledby="o-nama-title">
+      <div class="container about__inner">
+        <div class="about__media" data-reveal>
+          <img src="images/o-nama.jpg"
+               alt="Crveni Renault Clio sa ispoliranim lakom i farovima posle detailinga u DS Polish studiju"
+               width="1024" height="1024" loading="lazy" decoding="async">
+          <div class="about__badge" aria-hidden="true">
+            <span>DS</span>
+            <small>Polish</small>
+          </div>
+        </div>
+
+        <div class="about__text" data-reveal>
+          <p class="eyebrow"><span>04</span> O nama</p>
+          <h2 class="section-title" id="o-nama-title">Studio za negu<br>i zaštitu laka.</h2>
+          <!-- ZAMENITI po želji: tekst o studiju / vlasniku -->
+          <p>DS Polish je detailing studio specijalizovan za obnovu farova, poliranje laka i keramičku zaštitu. Svako vozilo prvo pregledamo pod odgovarajućim svetlom, procenimo stanje laka i tek onda predlažemo postupak.</p>
+          <p>Radimo sa profesionalnom opremom i proverenom hemijom, a postupke prilagođavamo vrsti vozila, stanju površine i načinu na koji se automobil svakodnevno koristi. Cilj je rezultat koji dobro izgleda i van studija – na dnevnom svetlu i posle mnogo pranja.</p>
+
+          <dl class="about__facts">
+            <div><dt>Pregled</dt><dd>Procena stanja pre svakog rada</dd></div>
+            <div><dt>Dogovor</dt><dd>Jasan postupak i cena unapred</dd></div>
+            <div><dt>Termin</dt><dd>Rad isključivo po zakazivanju</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 6. INSTAGRAM ============ -->
+    <section class="section insta" id="instagram" aria-labelledby="instagram-title">
+      <div class="container">
+        <header class="insta__head" data-reveal>
+          <div>
+            <p class="eyebrow"><span>05</span> Instagram</p>
+            <h2 class="section-title" id="instagram-title">@_ds_polish</h2>
+            <p class="insta__text">Radovi, procesi i rezultati iz studija – pratite šta je trenutno na poliranju.</p>
+          </div>
+          <a class="btn btn--primary" href="https://www.instagram.com/_ds_polish/" target="_blank" rel="noopener">
+            <svg class="btn__icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            Pratite nas na Instagramu
+          </a>
+        </header>
+
+        <!-- [FOTOGRAFIJE] placeholder fotografije – zamenite sopstvenim objavama -->
+        <ul class="insta__grid" data-reveal>
+          <li><a href="https://www.instagram.com/_ds_polish/" target="_blank" rel="noopener" aria-label="Instagram objava – poliranje laka">
+            <img src="images/proces-2.jpg" alt="Poliranje crnog laka orbitalnom mašinom" width="378" height="870" loading="lazy" decoding="async"></a></li>
+          <li><a href="https://www.instagram.com/_ds_polish/" target="_blank" rel="noopener" aria-label="Instagram objava – LED far">
+            <img src="https://images.unsplash.com/photo-1714434087918-4b9abedef3c6?auto=format&fit=crop&w=500&h=500&q=70" alt="Detalj LED fara na crnom automobilu" width="500" height="500" loading="lazy" decoding="async"></a></li>
+          <li><a href="https://www.instagram.com/_ds_polish/" target="_blank" rel="noopener" aria-label="Instagram objava – sportski automobil">
+            <img src="images/audi-r8.jpg" alt="Crni sportski automobil posle detailinga" width="996" height="472" loading="lazy" decoding="async"></a></li>
+          <li><a href="https://www.instagram.com/_ds_polish/" target="_blank" rel="noopener" aria-label="Instagram objava – korekcija laka">
+            <img src="https://images.unsplash.com/photo-1658244546876-d82cbf1a1c9e?auto=format&fit=crop&w=500&h=500&q=70" alt="Korekcija laka na haubi pored fara" width="500" height="500" loading="lazy" decoding="async"></a></li>
+          <li><a href="https://www.instagram.com/_ds_polish/" target="_blank" rel="noopener" aria-label="Instagram objava – nanošenje zaštite">
+            <img src="images/proces-3.jpg" alt="Nanošenje keramičke zaštite aplikatorom" width="378" height="858" loading="lazy" decoding="async"></a></li>
+          <li><a href="https://www.instagram.com/_ds_polish/" target="_blank" rel="noopener" aria-label="Instagram objava – pranje">
+            <img src="https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&w=500&h=500&q=70" alt="Pranje sportskog automobila pod pritiskom" width="500" height="500" loading="lazy" decoding="async"></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ 7. KONTAKT + GOOGLE MAPS ============ -->
+    <section class="section contact" id="kontakt" aria-labelledby="kontakt-title">
+      <div class="container contact__inner">
+        <div class="contact__info" data-reveal>
+          <p class="eyebrow"><span>06</span> Kontakt</p>
+          <h2 class="section-title" id="kontakt-title">Zakažite<br>termin.</h2>
+          <p class="contact__lead">Pozovite ili pošaljite poruku na Instagramu. Dogovaramo termin i postupak prema stanju vozila.</p>
+
+          <ul class="contact__list">
+            <li>
+              <span class="contact__label">Telefon</span>
+              <a class="contact__value contact__value--big" href="tel:+381653144591">065 314 4591</a>
+            </li>
+            <li>
+              <span class="contact__label">Adresa</span>
+              <!-- [ADRESA] -->
+              <address class="contact__value">[ADRESA], [GRAD]</address>
+            </li>
+            <li>
+              <span class="contact__label">Radno vreme</span>
+              <!-- [RADNO VREME] proverite i po potrebi izmenite (i u JSON-LD iznad) -->
+              <dl class="hours">
+                <div><dt>Pon – Pet</dt><dd>09:00 – 18:00</dd></div>
+                <div><dt>Subota</dt><dd>09:00 – 15:00</dd></div>
+                <div><dt>Nedelja</dt><dd>Zatvoreno</dd></div>
+              </dl>
+            </li>
+            <li>
+              <span class="contact__label">Instagram</span>
+              <a class="contact__value" href="https://www.instagram.com/_ds_polish/" target="_blank" rel="noopener">@_ds_polish</a>
+            </li>
+          </ul>
+
+          <div class="contact__actions">
+            <a class="btn btn--primary" href="tel:+381653144591">
+              <svg class="btn__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></svg>
+              Pozovi
+            </a>
+            <a class="btn btn--ghost" href="https://www.instagram.com/_ds_polish/" target="_blank" rel="noopener">
+              <svg class="btn__icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+              Instagram
+            </a>
+            <!-- [GOOGLE MAPS LINK] -->
+            <a class="btn btn--ghost btn--wide" href="https://maps.google.com/?q=DS+Polish+detailing" target="_blank" rel="noopener">
+              <svg class="btn__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg>
+              Pronađi nas na Google Maps
+            </a>
+          </div>
+        </div>
+
+        <div class="contact__map" data-reveal>
+          <!-- [GOOGLE MAPS EMBED] Google Maps > Podeli > Ugradi mapu > kopirajte samo vrednost iz src="..." -->
+          <iframe src="https://www.google.com/maps?q=Srbija&z=7&output=embed"
+                  title="Lokacija studija DS Polish na Google Maps"
+                  loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+          <!-- [GOOGLE MAPS LINK] -->
+          <a class="contact__map-link" href="https://maps.google.com/?q=DS+Polish+detailing" target="_blank" rel="noopener">
+            <span>DS Polish</span>
+            <small>[ADRESA], [GRAD]</small>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ 8. FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a class="logo" href="#top" aria-label="DS Polish – početak stranice">
+          <span class="logo__mark">DS</span>
+          <span class="logo__text">Polish<small>Detailing studio</small></span>
+        </a>
+        <p>Poliranje farova, poliranje i detailing eksterijera i keramička zaštita laka. Rad po zakazivanju.</p>
+      </div>
+
+      <nav class="footer__col" aria-label="Linkovi u podnožju">
+        <h3 class="footer__title">Stranica</h3>
+        <ul>
+          <li><a href="#usluge">Usluge</a></li>
+          <li><a href="#zasto">Zašto mi</a></li>
+          <li><a href="#rezultat">Pre / posle</a></li>
+          <li><a href="#o-nama">O nama</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__col">
+        <h3 class="footer__title">Kontakt</h3>
+        <ul>
+          <li><a href="tel:+381653144591">065 314 4591</a></li>
+          <li><a href="https://www.instagram.com/_ds_polish/" target="_blank" rel="noopener">Instagram @_ds_polish</a></li>
+          <li><a href="https://maps.google.com/?q=DS+Polish+detailing" target="_blank" rel="noopener">Google Maps</a></li><!-- [GOOGLE MAPS LINK] -->
+          <li>[ADRESA], [GRAD]</li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title">Radno vreme</h3>
+        <!-- [RADNO VREME] -->
+        <ul>
+          <li>Pon – Pet: 09:00 – 18:00</li>
+          <li>Subota: 09:00 – 15:00</li>
+          <li>Nedelja: zatvoreno</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <p>&copy; 2026 DS Polish. Sva prava zadržana.</p>
+      <a href="#top" class="footer__top">Na vrh
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+      </a>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

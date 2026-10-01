@@ -1,0 +1,5 @@
+# [DOMEN] zamenite vas-domen.rs pravim domenom
+User-agent: *
+Allow: /
+
+Sitemap: https://www.vas-domen.rs/sitemap.xml
